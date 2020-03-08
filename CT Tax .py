@@ -31,12 +31,12 @@ def askYesNoQuestion(question):
   else:
      return askYesNoQuestion(question)
 
-print ("You currently spend: $", format(current_tax, ",.2f"))
+print ("You currently spend: $", format(current_tax, ',.2f'))
 
 answer = askYesNoQuestion("Are you surprised? (Yes or No)" )
 if answer == "YES":
   print ("Of course! With the 38 cents included in the price of gas, you don't really think about it.")
-  print ("Driving {} a year at: {} means you use roughly: ".format(milage_d,c_mpg))
+  print ("Driving {} miles a year at: {} miles per gallon means you use roughly: ".format(milage_d,c_mpg))
   print (milage_d / c_mpg)
   print ("gallons of gas a year.")
 if answer == "NO":
@@ -51,12 +51,12 @@ Gasoline contains 33.70 kWh (33,700) watts of energy''')
 print (convmpg_mpge)
 # print (format(c_mpg * mpg_e, '.2f'))
 print ("This is your MPGe, ")
-print ("using your MPGe and your annual mileage we can figure out your kW use:")
+print ("using your MPGe and your annual mileage we can figure out your yearly kW useage:")
 
 #print (format(milage_d / convmpg_mpge, '.2f'))
 #print ("We combine this with the ")
 
 
 print ("Your yearly car cost under this system would be: $", format(yearly_total, ",.2f"))
-print ("This change in cost is: $ ")
-print (yearly_total - current_tax)
+print ("This change in cost is: ")
+print (yearly_total - current_tax) 
